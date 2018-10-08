@@ -130,7 +130,8 @@ int main()
 		sortedMap.push_back(peakMap.at(index));
 		usedIndex.push_back(index);
 	}
-
+	peakMap = sortedMap;
+	
 	cout << "Found " + to_string(peakMap.size()) + " peaks, how many peak files to output? (Sorted largest to smallest intensity) ";
 	int choice;
 	cin >> choice;
